@@ -173,8 +173,6 @@ h1 strong {
   align-items: center;
   justify-content: space-between;
 }
-.social {
-}
 .social-link {
   display: inline-block;
   width: 50px;
@@ -227,3 +225,6 @@ h1 strong {
   height: inherit;
   flex-wrap: inherit;
 }
+
+html{scroll-behavior:smooth}
+
