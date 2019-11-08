@@ -223,7 +223,9 @@ h1 strong {
 }
 .container{
   max-width: 1000px;
+  width: 100%;
   margin: 0 auto;
+  flex: 1;
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
@@ -239,8 +241,27 @@ html{scroll-behavior:smooth}
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+  .header{
+    display: block;
+    height: auto;
+  }
 
+  .header ol{
+    display: block;
+  }
+  
+  .header ol li{
+    height: 50px;
+  }
+
+  .header a {
+    justify-content: center;
+  }
+  
+  .header .logo {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 480px) {
 
