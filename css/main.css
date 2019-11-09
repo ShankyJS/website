@@ -87,7 +87,7 @@ h1 strong {
   padding: 20px;
 }
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 .project-title {
   font-size: 30px;
@@ -104,7 +104,7 @@ h1 strong {
   font-family: 'Fjalla One', sans-serif;
 }
 .project-imageContainer{
-  width: 500px;
+  width: 50%;
 }
 .project{
   border: 1px solid gray;
@@ -122,8 +122,8 @@ h1 strong {
   flex-wrap: wrap;
 }
 .event {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 10px;
   overflow: hidden;
@@ -238,10 +238,13 @@ html{scroll-behavior:smooth}
 /* desktop first que empieces desde el MQ más grande  */
 
 @media screen and (max-width: 1024px) {
-
+  .container{
+    
+  }
 }
 
 @media screen and (max-width: 767px) {
+
   .header{
     display: block;
     height: auto;
@@ -262,9 +265,90 @@ html{scroll-behavior:smooth}
   .header .logo {
     text-align: center;
   }
+  
+  .project {
+    display: block;
+  }
+
+  .project-imageContainer{
+    width: auto;
+    text-align: center;
+  }
+
+  .project-details{
+    width: auto;
+  }
+
+  .project-imageContainer img{
+    max-width: 100%;
+  }
+
+  .project-title{
+    font-size: 1.5em;
+    margin-bottom: .3em;
+  }
+  
+  .project-url{
+    font-size: 1em;
+  }
+
+  .project-course{
+    font-size: .7em;
+  }
+
+  .project-date{
+    font-size: 1em;
+  }
+
+  .project-description{
+    font-size: 0.8em;
+  }
+  
+  .project-course, .project-date, .project-url{
+    margin: .4em 0;
+  }
+
+  .event {
+    width: auto;
+    flex-shrink: initial;
+  }
+
+  .event img {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 480px) {
+  .project-details {
+    font-size: 12px;
+  }
 
+  .event-detail {
+    margin: -2em .5em .5em;
+    padding: 1em;
+  }
+}
+
+.contact{
+  height: auto;
+  padding: 1em 0;
+  display: block;
+  text-align: center;
+}
+
+.contact button{
+  margin: 1em auto;
+  display: initial;
+}
+
+.form-email h3{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer{
+  display: block;
+  text-align: center;
+  border: 1px solid transparent;
 }
 
 @media screen and (max-width: 320px) {
