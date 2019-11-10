@@ -5,18 +5,20 @@ const ipad = window.matchMedia('screen and (max-width: 767px)');
 
 // Media querie in JavaScript
 
-// ipad.addListener(validation)
+ipad.addListener(validation)
 
-// function validation(event) {
-//   if (event.matches){
-//     burgerButton.addEventListener('click', hideShow)
-//   } else {
-//     burgerButton.removeEventListener('click', hideShow)
-//   }
-// }
+function validation(event) {
+  if (event.matches){
+    burgerButton.addEventListener('click', hideShow)
+  } else {
+    burgerButton.removeEventListener('click', hideShow)
+  }
+}
+
+validation(ipad)
 
 
-burgerButton.addEventListener('click', hideShow)
+// burgerButton.addEventListener('click', hideShow)
 
 
 function hideShow() {
