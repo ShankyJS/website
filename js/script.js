@@ -18,9 +18,6 @@ function validation(event) {
 validation(ipad)
 
 
-// burgerButton.addEventListener('click', hideShow)
-
-
 function hideShow() {
   
   if(menu.classList.contains('is-active')) {

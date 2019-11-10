@@ -273,7 +273,7 @@ html{scroll-behavior:smooth}
   .container{
    
   }
-
+  
   .hero{
     height: auto;
     position: relative;
@@ -320,6 +320,10 @@ html{scroll-behavior:smooth}
 }
 @media screen and (max-width: 767px) {
 
+  h2 {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+  }
 
   .burger-button{
     display: block;
@@ -407,7 +411,7 @@ html{scroll-behavior:smooth}
   }
 
   .project-description{
-    font-size: 0.8em;
+    font-size: 1em;
   }
   
   .project-course, .project-date, .project-url{
@@ -430,7 +434,7 @@ html{scroll-behavior:smooth}
   }
 
   .project-details {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .event-detail {
