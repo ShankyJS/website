@@ -265,6 +265,12 @@ html{scroll-behavior:smooth}
 
 }
 
+.html-video{
+  width: 100%;
+  height: auto;
+  /* max-width: 100%; */
+}
+
 @media screen and (max-width: 767px) {
 
 
